@@ -21,16 +21,16 @@ async def on_ready():
     except Exception as e:
         print(f"Errore sync: {e}")
 
-@bot.tree.command(name="raid-start", description="Cambia nome a tutti i canali e manda Ciao come state?")
+@bot.tree.command(name="raid-start", description="Cambia nome a tutti i canali e manda Ciao come state? raid!")
 @app_commands.checks.has_permissions(manage_channels=True)
 async def extra(interaction: discord.Interaction):
-    await interaction.response.send_message("Sto partendo... cambio nomi e mando messaggi", ephemeral=True)
+    await interaction.response.send_message("Sto partendo... raid in arrivo", ephemeral=True)
 
     contatore = 0
     for canale in interaction.guild.text_channels:
         try:
             await canale.edit(name="Extra-by-bot")
-            await canale.send("Ciao come state?")
+            await canale.send("ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?")
             contatore += 1
         except Exception as e:
             print(f"Salto {canale.name}: {e}")
